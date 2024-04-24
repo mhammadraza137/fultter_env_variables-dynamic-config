@@ -30,7 +30,7 @@ Understanding how to handle environment variables securely and efficiently is cr
 
 - To access variables from .env first provide .env file through command  flutter run --dart-define-from-file private_data.env
 - Make sure to define a key in info.plist  
-  <key>DART_DEFINES</key>
-  <string>$(DART_DEFINES)</string>
+  "<key>DART_DEFINES</key>"
+  "<string>$(DART_DEFINES)</string>"
 - Don't forget to write the code bloc to extract environment variables from dart defined file in ios/Runner/AppDelegate.swift
 - The variables are stored in dartDefinesDictionary and can be accessed as dartDefinesDictionary["APP_NAME"] 
